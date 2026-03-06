@@ -44,7 +44,7 @@ const interpolate = (template: string, params: TranslationParams | undefined): s
     return template;
   }
 
-  return template.replace(/\{([^}]+)\}/g, (_match, token) => {
+  return template.replace(/{([^}]+)}/g, (_match, token) => {
     const value = params[token];
     return value === undefined ? `{${token}}` : String(value);
   });
