@@ -1,0 +1,14 @@
+.idea
+.git
+node_modules
+dist
+build
+coverage
+.cache
+.turbo
+.next
+out
+playwright-report
+test-results
+*.min.js
+*.min.css
